@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    max-width: 90%;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  button {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #5100ff;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+  }
+  
+  #result {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  #result {
+    /* other styles */
+    animation: fadein 2s;
+  }
+  
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 5;
+    }
+  }
+  #rock-btn:hover {
+    animation: rock-btn 0.3s ease-in-out infinite alternate;
+  }
+  
+  #paper-btn:hover {
+    animation: paper-btn 0.3s ease-in-out infinite alternate;
+  }
+  
+  #scissors-btn:hover {
+    animation: scissors-btn 0.3s ease-in-out infinite alternate;
+  }
+  
+  @keyframes rock-btn {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(10px, 10px);
+    }
+  }
+  
+  @keyframes paper-btn {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-10px, 10px);
+    }
+  }
+  
+  @keyframes scissors-btn {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(10px, -10px);
+    }
+  }
